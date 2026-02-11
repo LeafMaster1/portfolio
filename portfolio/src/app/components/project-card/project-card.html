@@ -1,0 +1,13 @@
+<div class="card" *ngIf="project">
+  <div class="card-media">
+    <!-- Placeholder for project image -->
+    <div class="media-placeholder"></div>
+  </div>
+  <div class="card-content">
+    <h3 class="project-title">{{ project.name }}</h3>
+    <p class="project-description">{{ project.description }}</p>
+    <div class="tech-tags">
+      <span class="tag terminal-text" >{{ project.language }}</span>
+    </div>
+  </div>
+</div>

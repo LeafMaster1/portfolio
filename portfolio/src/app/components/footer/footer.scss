@@ -1,0 +1,98 @@
+.footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+
+  .social-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+
+    .social-card {
+      background-color: var(--terminal-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      transition: all 0.3s;
+      min-width: 200px;
+
+      &:hover {
+        border-color: var(--accent-color);
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0, 255, 65, 0.1);
+
+        .icon {
+          text-shadow: 0 0 5px var(--accent-color);
+        }
+      }
+
+      &[href*="linkedin"]:hover {
+        border-color: #0a66c2;
+        box-shadow: 0 4px 12px rgba(10, 102, 194, 0.2);
+        .icon .linkedin-icon {
+          filter: drop-shadow(0 0 5px #0a66c2);
+        }
+      }
+
+      .icon {
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .github-icon {
+          width: 24px;
+          height: 24px;
+          color: var(--accent-color);
+        }
+
+        .linkedin-icon {
+          width: 24px;
+          height: 24px;
+          color: #0a66c2;
+        }
+      }
+
+      .info {
+        .label {
+          font-size: 0.7rem;
+          color: var(--text-secondary);
+          letter-spacing: 1px;
+        }
+        .username {
+          font-size: 0.9rem;
+          color: var(--text-primary);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer .social-cards {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 20px;
+
+    .social-card {
+      min-width: unset;
+    }
+  }
+}

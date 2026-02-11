@@ -1,0 +1,169 @@
+.whoami {
+  margin-bottom: 4rem;
+
+  .hero-container {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    background-color: var(--terminal-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+
+    .profile-image {
+      .image-box {
+        width: 180px;
+        height: 180px;
+        background-color: #222;
+        border: 2px solid var(--accent-color);
+        border-radius: 4px;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+          content: "USER";
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          color: var(--accent-color);
+          font-family: var(--font-mono);
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    .hero-content {
+      .command {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .name {
+        font-size: 2.5rem;
+        margin: 0 0 0.5rem;
+        font-weight: 700;
+      }
+
+      .role {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .details {
+        font-family: var(--font-mono);
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+      }
+
+      .actions {
+        display: flex;
+        gap: 1rem;
+
+        .btn {
+          padding: 0.8rem 1.5rem;
+          border-radius: 4px;
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 0.9rem;
+          transition: all 0.3s;
+
+          &.primary {
+            background-color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+            color: black;
+
+            &:hover {
+              background-color: transparent;
+              color: var(--accent-color);
+              box-shadow: 0 0 10px var(--accent-color);
+            }
+          }
+
+          &.secondary {
+            background-color: transparent;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+
+            &:hover {
+              background-color: var(--accent-color);
+              color: black;
+              box-shadow: 0 0 10px var(--accent-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tech-stack {
+  margin-bottom: 4rem;
+
+  .prompt {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+
+  .json-container {
+    background-color: var(--terminal-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    font-family: var(--font-mono);
+    line-height: 2;
+
+    .json-line {
+      color: var(--text-secondary);
+
+      .key {
+        color: var(--text-secondary);
+      }
+
+      .value {
+        color: var(--text-primary);
+        font-family: var(--font-sans);
+        font-weight: 500;
+      }
+
+      .symbols {
+        margin: 0 0.5rem;
+        font-weight: bold;
+
+        &.ts { color: #3178c6; }
+        &.go { color: #00add8; }
+        &.rust { color: #dea584; }
+        &.dotnet { color: #512bd4; }
+        &.spring { color: #6db33f; }
+        &.vue { color: #42b883; }
+        &.react { color: #61dafb; }
+        &.nextjs { color: #ffffff; }
+        &.tailwind { color: #06b6d4; }
+        &.node { color: #339933; }
+        &.psql { color: #4169e1; }
+        &.redis { color: #dc382d; }
+        &.vscode { color: #007acc; }
+        &.vs2022 { color: #5c2d91; }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .whoami .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+
+    .actions {
+      justify-content: center;
+    }
+  }
+
+  .tech-stack .json-container {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+}

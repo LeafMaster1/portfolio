@@ -1,0 +1,41 @@
+<section class="featured-list">
+  <h2 class="prompt terminal-text">./FEATURED-PROJECTS</h2>
+  <div class="table-container">
+    <table class="terminal-table">
+      <thead>
+        <tr class="terminal-text">
+          <th>Permissions</th>
+          <th>Size</th>
+          <th>Date</th>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>drwxr-xr-x</td>
+          <td>4.2MB</td>
+          <td>Oct 24</td>
+          <td class="accent-text"><i class="icon-folder"></i> 📁 Neural-Net-Optimizer</td>
+        </tr>
+        <tr>
+          <td>-rw-r--r--</td>
+          <td>120KB</td>
+          <td>Sep 12</td>
+          <td class="accent-text"><i class="icon-file"></i> 📄 kernel-patch-v2.sh</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="project-showcase">
+  <h2 class="prompt terminal-text">PROJECT SHOWCASE</h2>
+  <div class="cards-grid">
+    <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
+    
+   
+  </div>
+</section>
+
+<div class="terminal-footer">
+</div>
