@@ -19,6 +19,12 @@
         border-radius: 4px;
         position: relative;
         overflow: hidden;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
 
         &::after {
           content: "USER";
@@ -123,7 +129,7 @@
       }
 
       .value {
-        color: var(--text-primary);
+        color: var(--accent-color);
         font-family: var(--font-sans);
         font-weight: 500;
       }
