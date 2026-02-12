@@ -10,6 +10,13 @@ import { About } from './components/about/about';
 import { Projects } from './components/projects/projects';
 import { Contact } from './components/contact/contact';
 import { ProjectCard } from './components/project-card/project-card';
+import { ReactComponent, TypeScriptComponent, CSharpComponent, JavaScriptComponent, 
+  MicrosoftDotNETComponent, AspNetComponent,SvelteComponent,
+  AngularComponent,VueComponent,CSSComponent,
+  NodeJsComponent,SQLiteComponent,VisualStudioCodeComponent,
+  VisualStudioComponent,GitHubActionsComponent
+} from './assets/icon';
+import { ProjectModal } from './components/project-modal/project-modal';
 
 @NgModule({
   declarations: [
@@ -19,13 +26,29 @@ import { ProjectCard } from './components/project-card/project-card';
     About,
     Projects,
     Contact,
-    ProjectCard
+    ProjectCard,
+    ProjectModal,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    ReactComponent,
+    TypeScriptComponent,
+    CSharpComponent,
+    JavaScriptComponent,
+    MicrosoftDotNETComponent,
+    AspNetComponent,
+    SvelteComponent,
+    AngularComponent,
+    VueComponent,
+    CSSComponent,
+    NodeJsComponent,
+    SQLiteComponent,
+    VisualStudioCodeComponent,
+    VisualStudioComponent,
+    GitHubActionsComponent
+],
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideClientHydration(withEventReplay()),

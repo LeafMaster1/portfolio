@@ -31,10 +31,22 @@
 <section class="project-showcase">
   <h2 class="prompt terminal-text">PROJECT SHOWCASE</h2>
   <div class="cards-grid">
-    <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
-    
-   
+    <!-- <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card> -->
+
+    <app-project-card *ngFor="let p of projects" [project]="p" (cardClick)="openProject(p)">
+    </app-project-card>
+
+    <!-- <div class="projects-grid"> -->
+    <!-- <app-project-card *ngFor="let project of projects" [project]="project" (cardClick)="openProject(project)">
+        </app-project-card> -->
+    <!--</div> -->
   </div>
+
+  <!-- Modalen visas bara om selectedProject har ett värde -->
+
+  <app-project-modal *ngIf="selectedProject" [project]="selectedProject" (close)="closeModal()">
+  </app-project-modal>
+
 </section>
 
 <div class="terminal-footer">

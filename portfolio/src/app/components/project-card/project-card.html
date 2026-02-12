@@ -1,7 +1,14 @@
-<div class="card" *ngIf="project">
+<div class="card" *ngIf="project" (click)="onCardClick()" style="cursor: pointer;">
   <div class="card-media">
     <!-- Placeholder for project image -->
-    <div class="media-placeholder"></div>
+    
+    <div class="media-placeholder">
+      <img *ngIf="project.images && project.images.length > 0" 
+            [src]="project.images[0]"
+            alt="{{ project.name }}"
+            class="featured-image">  
+      
+    </div>
   </div>
   <div class="card-content">
     <h3 class="project-title">{{ project.name }}</h3>

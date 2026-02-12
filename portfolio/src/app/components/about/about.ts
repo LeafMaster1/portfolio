@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-about',
   standalone: false,
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './about.scss',
 })
 export class About {
+
 
 }
