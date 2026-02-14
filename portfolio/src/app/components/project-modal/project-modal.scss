@@ -18,15 +18,15 @@
    border-radius: 8px;
    width: 95%;
    max-width: 1200px;
-   max-height: 95vh;
-   overflow-y: auto;
+   max-height: 90vh;
+   display: flex;
+   flex-direction: column;
    position: relative;
    border: 1px solid var(--border-color);
    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
-   overflow-y: hidden;
-   overflow-x: hidden;
 
    header {
+     flex-shrink: 0;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -54,6 +54,24 @@
          color: var(--accent-color);
        }
      }
+   }
+ }
+
+ .modal-body {
+   overflow-y: auto;
+   flex-grow: 1;
+   padding-right: 10px; // Plats för scrollbar
+
+   /* Anpassa scrollbar för snyggare terminal-look */
+   &::-webkit-scrollbar {
+     width: 8px;
+   }
+   &::-webkit-scrollbar-track {
+     background: rgba(255, 255, 255, 0.05);
+   }
+   &::-webkit-scrollbar-thumb {
+     background: var(--accent-color);
+     border-radius: 4px;
    }
  }
 
@@ -90,6 +108,7 @@
  }
 
  .modal-footer {
+   flex-shrink: 0;
    margin-top: 2rem;
    padding-top: 1rem;
    border-top: 1px solid var(--border-color);

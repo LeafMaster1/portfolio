@@ -9,6 +9,14 @@
   --font-mono: 'Fira Code', 'Courier New', Courier, monospace;
 }
 
+body.theme-orange {
+  --accent-color: #ffb000;
+}
+
+body.theme-blue {
+  --accent-color: #00ccff;
+}
+
 body, html {
   margin: 0;
   padding: 0;

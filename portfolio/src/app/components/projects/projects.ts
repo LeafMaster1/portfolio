@@ -30,10 +30,18 @@ export class Projects {
       
     },
     {
-      name: 'portfolio',
-      description: 'My personal portfolio website built with Angular',
-      url: 'https://github.com/myusername/portfolio',
-      language: ['TypeScript'],
+      name: 'Kalles - Ordersystem',
+      description: 'Konsolbaserat ordersystem i C# (.NET 8). Hanterar produkter, kunder och ordrar med persistent lagring via JSON.',
+      url: 'https://github.com/LeafMaster1/Kalles-Ordersytem-Skol-Projekt',
+      language: ['C#'],
+      images: [
+        'assets/kalles-ordersytem/run-menu.png',
+        'assets/kalles-ordersytem/create-kund.png',
+        'assets/kalles-ordersytem/code-screen-menu.png',
+        'assets/kalles-ordersytem/code-screen.png',
+        'assets/kalles-ordersytem/orders.png',
+        'assets/kalles-ordersytem/code-screen-order.png',
+      ]
     },
     {
       name: 'game-engine',
