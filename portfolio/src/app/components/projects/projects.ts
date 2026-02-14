@@ -36,7 +36,7 @@ export class Projects {
       language: ['C#'],
       images: [
         'assets/kalles-ordersytem/run-menu.png',
-        'assets/kalles-ordersytem/create-kund.png',
+        'assets/kalles-ordersytem/create-order-zoom.png',
         'assets/kalles-ordersytem/code-screen-menu.png',
         'assets/kalles-ordersytem/code-screen.png',
         'assets/kalles-ordersytem/orders.png',
@@ -44,18 +44,29 @@ export class Projects {
       ]
     },
     {
-      name: 'game-engine',
-      description: 'A 2D game engine in C++',
-      url: 'https://github.com/myusername/game-engine',
+      name: 'BlackBox - Data transformation',
+      description: 'konsolprogram skrivet i C# (.NET 8) som transformerar data från XML-format till CSV-format. Programmet är utformat för att hantera orderdata och extrahera relevant information till ett strukturerat CSV-format.',
+      url: 'https://github.com/LeafMaster1/blackbox-data-transformation',
       language: ['C#'],
+      images: [
+        'assets/BlackBox-Data-Transformation/code-program.png',
+        'assets/BlackBox-Data-Transformation/code-formatOrder.png',
+        'assets/BlackBox-Data-Transformation/code-output.png',
+        'assets/BlackBox-Data-Transformation/code-order.png',
+        'assets/BlackBox-Data-Transformation/code-xml-example.png',
+      ]
     },
     {
       name: 'weather-app',
       description: 'A weather forecasting app built with React',
-      url: 'https://github.com/myusername/weather-app',
+      url: 'https://github.com/LeafMaster1/weather-app',
       language: ['JavaScript', 'React'],
-    }
-  
+      images: [
+        'assets/weather-app/home.png',
+        'assets/weather-app/forecast.png',
+        'assets/weather-app/settings.png',
+      ]
+    },
   ];
 
   selectedProject: Project | null = null; // Variabel för att hålla reda på det valda projektet som ska visas i modalen

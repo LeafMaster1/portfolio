@@ -28,6 +28,10 @@ body, html {
   line-height: 1.6;
 }
 
+a {
+  text-decoration: none;
+}
+
 // Globala text-klasser
 .terminal-text {
   font-family: var(--font-mono);

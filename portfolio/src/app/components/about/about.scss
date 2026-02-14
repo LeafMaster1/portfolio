@@ -74,15 +74,16 @@
           font-weight: bold;
           font-size: 0.9rem;
           transition: all 0.3s;
+          text-decoration: none;
 
           &.primary {
-            background-color: var(--accent-color);
+            background-color: transparent;
             border: 1px solid var(--accent-color);
-            color: black;
-
+            color: var(--accent-color);
+            
             &:hover {
-              background-color: transparent;
-              color: var(--accent-color);
+              background-color: var(--accent-color);
+              color: black;
               box-shadow: 0 0 10px var(--accent-color);
             }
           }
